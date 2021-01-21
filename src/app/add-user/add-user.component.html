@@ -1,0 +1,11 @@
+<div>
+  <input matInput placeholder="username" #username />
+</div>
+
+<div>
+  <input matInput placeholder="url" #url />
+</div>
+
+<button mat-raised-button (click)="addUser(username.value, url.value)">
+  Add User
+</button>
